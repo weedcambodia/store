@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed Cambodia</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style2.css"><link>
+</head>
+<body>
+    <center><img src="img/logo.png" style="width: 3cm;"></center>
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+
+            <h1>Pay Money</h1>
+
+            <center><img src="img/QR.PNG" style="width: 7cm;"></center>
+
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="namebank" placeholder="Namebank" required>
+            <input type="text" id="Addres" placeholder="Addres" required>
+            <textarea id="message" cols="30" rows="4" placeholder="Leave your message"></textarea>
+            <button id="submit" type="submit"> send </button>
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                SecureToken : "b4f6afc9-6cec-46dc-b2dc-f421174a3d42",
+                To : 'chhimmengchhun.biu@gmail.com',
+                From : "chhimmengchhun.biu@gmail.com",
+                Subject : "Email",
+                Body : "name:  " + document.getElementById("name").value
+                       + "<br> Email:  " + document.getElementById("email").valiu
+                       + "<br> phone no:  " + document.getElementById("phone").valiu
+                       + "<br> message:  " + document.getElementById("message").valiu
+            }).then(
+              message => alert("message sent succesfully")
+            );
+        }
+    </script>
+</body>
+</html>

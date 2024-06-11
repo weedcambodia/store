@@ -5,8 +5,8 @@ body {
 }
 
 header {
-    
-    color: rgb(0, 0, 0);
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
     padding: 1em;
 }
@@ -32,8 +32,6 @@ nav a:hover {
 
 form {
     margin: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 label {
@@ -44,14 +42,14 @@ label {
 input {
     margin-bottom: 12px;
     padding: 8px;
-    width: 50%;
+    width: 100%;
     box-sizing: border-box;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #4CAF50;
+    color: white;
     border: none;
     cursor: pointer;
 }
