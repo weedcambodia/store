@@ -7,6 +7,11 @@ h1 {
     align-items: center;
     height: 100px;
 }
+
+a {
+  color: #ddd;
+}
+
 h2 {
     color: rgb(33, 30, 30);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
